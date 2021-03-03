@@ -1,2 +1,2 @@
-# price-table-01__responsive
+# Price table - Responsive
 Tabla de precios con HTML Y CSS  responsiva 
