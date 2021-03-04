@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --color-primary: #3e4064;
+  --color-secondary: #a5f059;
+  --padding-bottom: 30px;
+}
+
+body {
+  background-color: #dfe2df;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  /* background: var(--color-secondary); */
+  width: 80%;
+  max-width: 900px;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-primary);
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 10px;
+}
+
+.paragraph {
+  text-align: center;
+  padding: 0 20px 30px;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.point {
+  color: var(--color-secondary);
+}
+
+.table {
+  width: 30%;
+  height: 450px;
+  border: 2px solid var(--color-primary);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  padding: 20px 0;
+  box-shadow: 0px 0px 4px 0px var(--color-primary);
+}
+
+.table__title {
+  font-size: 1.8rem;
+  padding-bottom: var(--padding-bottom);
+}
+
+.table__img {
+  width: 60px;
+  padding-bottom: var(--padding-bottom);
+}
+
+.table__price {
+  font-size: 1.8rem;
+  padding-bottom: var(--padding-bottom);
+}
+
+.table__copy {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: var(--padding-bottom);
+  width: 70%;
+}
+
+.table__btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 100px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.table:hover {
+  transform: scale(1.1);
+  /* height: 500px; */
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  .table {
+    width: 30%;
+    height: auto;
+  }
+
+  .table__title {
+    font-size: 1.5rem;
+  }
+
+  .table__img {
+    width: 40px;
+  }
+
+  .table__price {
+    font-size: 1.5rem;
+  }
+
+  .table__copy {
+    font-size: 1rem;
+  }
+
+  .table__btn {
+    width: 90%;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --padding-bottom: 15px;
+  }
+
+  .container {
+    justify-content: space-evenly;
+    height: auto;
+  }
+
+  .table {
+    width: 80%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+}
